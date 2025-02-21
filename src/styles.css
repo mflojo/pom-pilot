@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+.irish-grover-regular {
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+p {
+    text-wrap: pretty;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+  
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+#header {
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    background: linear-gradient(
+        to right,
+        #dd6a6a,
+        #8f163f,
+        #6d0606
+    );
+
+    /* mask created with https://css-generators.com/wavy-shapes/ */
+    --mask:
+    radial-gradient(32.02px at 50% calc(100% - 45px),#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+    radial-gradient(32.02px at 50% calc(100% + 25px),#0000 99%,#000 101%) 50% calc(100% - 20px)/80px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+#header>h1 {
+    font-size: 5rem;
+    font-family: "Irish Grover", serif;
+}
+
+#header>h1::after {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url('pom.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    filter: invert(1);
+}
