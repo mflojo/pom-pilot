@@ -88,3 +88,32 @@ body {
     margin-left: 10px;
     filter: invert(1);
 }
+
+#content {
+    display: flex;
+    margin-top: 50px;
+    width: 100vw;
+}
+
+#left {
+    width: 30%;
+    background-color: lightgray;
+}
+
+#tools {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#right {
+    width: 70%;
+}
