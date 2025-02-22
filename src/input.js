@@ -1,5 +1,6 @@
+import { task } from "./task.js";
+
 function input() {
-    const screen = document.querySelector("#screen");
     const dialog = document.querySelector("#user-input");
     const userTitle = document.querySelector("#task-title");
     const userDescription = document.querySelector("#task-description");
@@ -16,16 +17,18 @@ function input() {
         let newImportance = userImportance.value === "true";
 
         console.log(`user input: ${newTitle}, ${newDescription}, ${newImportance}`);
-
-        if (!newTask || !newDescription) {
-            alert("Please enter valid task details!");
-            return;
-        }
         
-        let newTask = Task(newTitle, newDescription, newImportance);
+        task(newTitle, newDescription, newImportance);
+
+        userTitle.value = "";
+        userDescription.value = "";
+        userImportance.value = "false";
+
+        dialog.close();
 
     });
 
+    
     
 }
 
