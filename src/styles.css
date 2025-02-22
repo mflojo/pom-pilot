@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@900&family=Irish+Grover&display=swap');
 
 .irish-grover-regular {
     font-family: "Irish Grover", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+.doto-tech {
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -91,34 +100,53 @@ body {
 
 #content {
     display: flex;
+    flex-direction: column;
     margin-top: 50px;
     width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
-#left {
-    width: 30%;
-    background-color: lightgray;
+#addTask {
+    width: 200px;
+    height: 50px;
+    background-color: #8f163f;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
 
-#tools {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+#addTask:hover {
+    background-color: #dd6a6a;
+    cursor: pointer;
 }
 
 #filters {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     padding: 10px;
 }
 
+.square {
+    appearance: none;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.square:checked {
+    background-color: #6d0606;
+}
+
 #right {
-    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 #palm-pilot {
@@ -143,7 +171,7 @@ body {
     margin-bottom: 20px;
     padding: 10px;
     overflow-y: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Doto", serif;
     font-size: 1rem;
     color: black;
     display: flex;
@@ -185,4 +213,25 @@ body {
     border-radius: 20px;
     border: 1px solid black;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+    border: 1px dashed grey;
+    padding: 10px;
+}
+
+.completed-task {
+    color: white;
+    background-image: 
+    repeating-linear-gradient(
+      45deg,                /* Angle of the diagonal lines */
+      #707070,              /* Grey color for the dashed lines */
+      #5f5f5f 10px,         /* Dash length */
+      transparent 10px,     /* Transparent space after each dash */
+      transparent 20px      /* Space between dashes */
+    );
+}
+
+.important-task {
+    border: 1px solid red;
 }
