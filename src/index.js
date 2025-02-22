@@ -1,5 +1,6 @@
 import "./styles.css";
 import { input } from "./input.js";
+import { filter } from "./filter.js";
 
 
 console.log("Testing js, this is the DOM loaded");
@@ -28,3 +29,13 @@ screen.addEventListener("click", function(event) {
         card.classList.toggle("completed-task");
     }
 });
+
+const filterAll = document.querySelector("#filterAll");
+const filterImportant = document.querySelector("#filterImportant");
+const filterIncomplete = document.querySelector("#filterIncomplete");
+const filterComplete = document.querySelector("#filterComplete");
+
+filterAll.addEventListener("change", filter);
+filterImportant.addEventListener("change", filter);
+filterIncomplete.addEventListener("change", filter);
+filterComplete.addEventListener("change", filter);
