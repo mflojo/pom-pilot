@@ -15,11 +15,11 @@ function task(title, description, importance) {
             <p>${description}</p>
             <p>Date Added: </p>
         </div>
-        <button id="card-complete">Toggle Complete</button>
-        <button id="card-delete">Delete Task</button>
+        <button class="card-complete">Toggle Complete</button>
+        <button class="card-delete">Delete Task</button>
     `;
 
-    screen.appendChild(card);
+    screen.prepend(card);
 
 }
 
