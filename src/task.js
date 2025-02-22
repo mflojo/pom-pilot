@@ -1,3 +1,5 @@
+import { format } from "date-fns";
+
 function task(title, description, importance) {
     const screen = document.querySelector("#screen");
     
@@ -9,11 +11,14 @@ function task(title, description, importance) {
         card.classList.add("important-task");
     }
 
+    const now = new Date();
+    const date = format(now, "EEE MMM dd yyyy HH:mm:ss");
+
     card.innerHTML = `
         <div class="card-content">
             <h3>${title}</h3>
             <p>${description}</p>
-            <p>Date Added: </p>
+            <p>Date Added: ${date}</p>
         </div>
         <button class="card-complete">Toggle Complete</button>
         <button class="card-delete">Delete Task</button>
