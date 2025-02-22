@@ -107,7 +107,7 @@ body {
     align-items: center;
 }
 
-#addTask {
+#add-task {
     width: 200px;
     height: 50px;
     background-color: #8f163f;
@@ -118,7 +118,7 @@ body {
     margin-bottom: 10px;
 }
 
-#addTask:hover {
+#add-task:hover {
     background-color: #dd6a6a;
     cursor: pointer;
 }
@@ -233,5 +233,5 @@ body {
 }
 
 .important-task {
-    border: 1px solid red;
+    border: 3px solid #6d0606;
 }
