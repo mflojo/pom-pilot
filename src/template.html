@@ -17,7 +17,25 @@
 
     <div id="content">
               
-        <button id="addTask">Add New Task</button>   
+        <button id="add-task">Add New Task</button>   
+
+            <dialog id="user-input">
+                <form>
+                    <p>Task Name:</p>
+                    <input type="text" id="task-title" placeholder="Wash the dishes" maxlength="25" required>
+                    <p>Task Description:</p>
+                    <input type="text" id="task-description" placeholder="These dishes have been here a while, lets get started with the cleaning!" maxlength="100" required>
+                    <p>Is this task important?</p>
+                    <select id="task-importance">
+                        <option value="false" selected>No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                    <div>
+                        <button value="cancel" formmethod="dialog">Cancel</button>
+                        <button id="confirm-button" value="default">Confirm</button>
+                    </div>
+                </form>
+            </dialog>
 
         <div id="filters">
                 <label>
@@ -71,27 +89,7 @@
                         <button id="card-delete">Delete Task</button>
                     </div>
                     
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">Card Title</h3>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="card-date">Date added: 12/12/2012</p>
-                            <p class="card-completed">*NOT COPMLETED*</p>
-                        </div>
-                        <button id="card-complete">Complete Task</button>
-                        <button id="card-delete">Delete Task</button>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">Card Title</h3>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="card-date">Date added: 12/12/2012</p>
-                            <p class="card-completed">*NOT COPMLETED*</p>
-                        </div>
-                        <button id="card-complete">Complete Task</button>
-                        <button id="card-delete">Delete Task</button>
-                    </div>
 
                 </div>
 
