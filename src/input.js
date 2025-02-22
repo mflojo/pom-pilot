@@ -9,7 +9,9 @@ function input() {
 
     dialog.showModal();
 
-    userConfirm.addEventListener("click", (e) => {
+    userConfirm.addEventListener("click", handleConfirmClick);
+
+    function handleConfirmClick(e) {
         e.preventDefault();
 
         let newTitle = userTitle.value.trim();
@@ -26,9 +28,10 @@ function input() {
 
         dialog.close();
 
-    });
+        userConfirm.removeEventListener("click", handleConfirmClick);
+    }
+        
 
-    
     
 }
 
