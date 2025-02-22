@@ -16,29 +16,22 @@
     </div>
 
     <div id="content">
+              
+        <button id="addTask">Add New Task</button>   
 
-        <div id="left">
-            <div id="tools">
-                <p>tools:</p>
-                <button id="addTask">Add Task</button>
-             
-            </div>
-
-            <div id="filters">
-                <p>filters:</p>
-                    <label>
-                        <input type="radio" name="filter" id="filterAll"> Work Tasks
-                    </label>
-                    <label>
-                        <input type="radio" name="filter" id="filterChores"> Chores
-                    </label>
-                    <label>
-                        <input type="radio" name="filter" id="filterIncomplete"> Unfinished Tasks
-                    </label>
-                    <label>
-                        <input type="radio" name="filter" id="filterComplete"> Completed Tasks
-                    </label>
-            </div>
+        <div id="filters">
+                <label>
+                    <input class="square" type="radio" name="filter" id="filterAll" checked> All Tasks
+                </label>
+                <label>
+                    <input class="square" type="radio" name="filter" id="filterImportant"> Important Tasks
+                </label>
+                <label>
+                    <input class="square" type="radio" name="filter" id="filterIncomplete"> Unfinished Tasks
+                </label>
+                <label>
+                    <input class="square" type="radio" name="filter" id="filterComplete"> Completed Tasks
+                </label>
         </div>
     
         <div id="right">
@@ -47,34 +40,34 @@
 
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="card-title">Card Title</h3>
+                            <h3 class="card-title">REGULAR TASK</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <p class="card-date">Date added: 12/12/2012</p>
                             <p class="card-completed">*NOT COPMLETED*</p>
                         </div>
-                        <button id="card-complete">Complete Task</button>
+                        <button id="card-complete">Toggle Complete</button>
                         <button id="card-delete">Delete Task</button>
                     </div>
 
-                    <div class="card">
+                    <div class="card completed-task">
                         <div class="card-content">
-                            <h3 class="card-title">Card Title</h3>
+                            <h3 class="card-title">COMPLETED TASK</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="card-date">Date added: 12/12/2012</p>
-                            <p class="card-completed">*NOT COPMLETED*</p>
+                            <p class="card-date">Date added: 12/12/2012, 12:00</p>
+                            <p class="card-completed">task complete</p>
                         </div>
-                        <button id="card-complete">Complete Task</button>
+                        <button id="card-complete">Toggle Complete</button>
                         <button id="card-delete">Delete Task</button>
                     </div>
                     
-                    <div class="card">
+                    <div class="card important-task">
                         <div class="card-content">
-                            <h3 class="card-title">Card Title</h3>
+                            <h3 class="card-title">IMPORTANT TASK</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <p class="card-date">Date added: 12/12/2012</p>
                             <p class="card-completed">*NOT COPMLETED*</p>
                         </div>
-                        <button id="card-complete">Complete Task</button>
+                        <button id="card-complete">Toggle Complete</button>
                         <button id="card-delete">Delete Task</button>
                     </div>
                     
