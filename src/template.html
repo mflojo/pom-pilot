@@ -24,7 +24,7 @@
                     <p>Task Name:</p>
                     <input type="text" id="task-title" placeholder="Wash the dishes" maxlength="25">
                     <p>Task Description:</p>
-                    <input type="text" id="task-description" placeholder="These dishes have been here a while, lets get started with the cleaning!" maxlength="100">
+                    <textarea id="task-description" rows="4" cols="30" placeholder="These dishes have been here a while, lets get started with the cleaning!" maxlength="100"></textarea>
                     <p>Is this task important?</p>
                     <select id="task-importance">
                         <option value="false" selected>No</option>
@@ -58,35 +58,32 @@
 
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="card-title">REGULAR TASK</h3>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="card-date">Date added: 12/12/2012</p>
-                            <p class="card-completed">*NOT COPMLETED*</p>
+                            <h3>REGULAR TASK</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Date added: 12/12/2012 12:00</p>
                         </div>
-                        <button id="card-complete">Toggle Complete</button>
-                        <button id="card-delete">Delete Task</button>
+                        <button class="card-complete">Toggle Complete</button>
+                        <button class="card-delete">Delete Task</button>
                     </div>
 
                     <div class="card completed-task">
                         <div class="card-content">
-                            <h3 class="card-title">COMPLETED TASK</h3>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="card-date">Date added: 12/12/2012, 12:00</p>
-                            <p class="card-completed">task complete</p>
+                            <h3>COMPLETED TASK</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Date added: 12/12/2012 12:00</p>
                         </div>
-                        <button id="card-complete">Toggle Complete</button>
-                        <button id="card-delete">Delete Task</button>
+                        <button class="card-complete">Toggle Complete</button>
+                        <button class="card-delete">Delete Task</button>
                     </div>
                     
                     <div class="card important-task">
                         <div class="card-content">
-                            <h3 class="card-title">IMPORTANT TASK</h3>
-                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="card-date">Date added: 12/12/2012</p>
-                            <p class="card-completed">*NOT COPMLETED*</p>
+                            <h3>IMPORTANT TASK</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Date added: 12/12/2012 12:00</p>
                         </div>
-                        <button id="card-complete">Toggle Complete</button>
-                        <button id="card-delete">Delete Task</button>
+                        <button class="card-complete">Toggle Complete</button>
+                        <button class="card-delete">Delete Task</button>
                     </div>
                     
 
