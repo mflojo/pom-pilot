@@ -28,6 +28,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+button {
+    cursor: pointer;
+}
+
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -234,4 +238,22 @@ body {
 
 .important-task {
     border: 3px solid #6d0606;
+}
+
+dialog {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+dialog button {
+    background-color: #dd6a6a;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 150px;
 }
