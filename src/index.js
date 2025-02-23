@@ -1,9 +1,13 @@
 import "./styles.css";
 import { input } from "./input.js";
 import { filter } from "./filter.js";
+import { storage } from "./storage.js"
 
-
-console.log("Testing js, this is the DOM loaded");
+if (storage("localStorage")) {
+    console.log("local storage is available!");
+  } else {
+    console.log("local stored is NOT available.");
+  }
 
 const button = document.querySelector("#add-task");
 

@@ -1,4 +1,5 @@
 import { format } from "date-fns";
+import { storageSave } from "./storageSave";
 
 function task(title, description, importance) {
     const screen = document.querySelector("#screen");
@@ -16,15 +17,16 @@ function task(title, description, importance) {
 
     card.innerHTML = `
         <div class="card-content">
-            <h3>${title}</h3>
-            <p>${description}</p>
-            <p>Date Added: ${date}</p>
+            <h3 class="card-title">${title}</h3>
+            <p class="card-description">${description}</p>
+            <p class="card-date">Date Added: ${date}</p>
         </div>
         <button class="card-complete">Toggle Complete</button>
         <button class="card-delete">Delete Task</button>
     `;
 
     screen.prepend(card);
+    // storageSave();
 
 }
 

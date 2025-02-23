@@ -1,4 +1,4 @@
-function storageAvailable(type) {
+function storage(type) {
     let storage;
     try {
       storage = window[type];
